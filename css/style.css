@@ -1,7 +1,7 @@
 button {
     height: 30px;
-    width: 100px;
-    border-style: solid;
+    width: 100px;;
+    border: none;
     cursor: pointer;
     margin-right: 8px;
 }
@@ -10,11 +10,13 @@ button {
     background-color: red;
     color: white;
     border-radius: 3px;
-    border: none;
+    border-width: .5px;
+    border-color: rgb(176, 15, 15);
 }
 
 .join-btn {
    background-color: white; 
+   border: solid;
    border-color: rgb(0, 102, 255);
    border-radius: 3px;
    border-width: 0.5px;
@@ -29,4 +31,59 @@ button {
     font-weight: bold;
     color: white;
     width: 60px;
+}
+
+.uber-btn {
+    background-color: black;
+    color: white;
+    border:none;
+    margin-top: 5px;
+}
+
+.amazon-btn {
+    background-color: rgb(255, 216, 20);
+    border: none;
+    border-radius: 20px;
+    color: black;
+    width: 100px;
+}
+
+.github-btn {
+    background-color: rgb(46, 164, 79);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 70px;
+}
+
+.bootstrap-btns {
+    margin-top: 10px;
+}
+
+.getStart-btn{
+    background-color: rgb(121, 82, 179);
+    border-radius: 3px;
+    color: white;
+}
+
+.getStart-btn:hover {
+    background-color: white;
+    color: rgb(121, 82, 179);
+    border: solid;
+    border-color: rgb(121, 82, 179);
+}
+
+.download-btn {
+    background-color: white;
+    border: solid;
+    border-radius: 3px;
+    color: rgb(108, 117, 125);
+
+}
+
+.download-btn:hover {
+    background-color: rgb(108, 117, 125);
+    color: white;
 }
