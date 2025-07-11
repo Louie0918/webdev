@@ -87,3 +87,37 @@ button {
     background-color: rgb(108, 117, 125);
     color: white;
 }
+
+.linkedIn-btns {
+    margin-top: 10px;
+}
+
+.applyWebsite-btn {
+    background-color: rgb(10, 102, 194);
+    border: solid;
+    border-radius: 3px;
+    color: white;
+    width: fit-content;
+    padding: 5px 15px;
+
+}
+
+.applyWebsite-btn:hover {
+    background-color: white;
+    color: rgb(10, 102, 194);
+}
+
+.linkedIn-save-btn {
+    background-color: white;
+    border: solid;
+    border-radius: 3px;
+    color: rgb(10, 102, 194);
+    width: fit-content;
+    padding: 5px 15px;
+
+}
+
+.linkedIn-save-btn:hover {
+    background-color: rgb(10, 102, 194);
+    color: white;
+}
