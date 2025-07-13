@@ -3,14 +3,26 @@ button {
     width: 100px;;
     border: none;
     cursor: pointer;
+    margin-right: 10px;
 }
 
 .subscribe-btn {
-    background-color: red;
+    background-color: rgb(237, 11, 11);
     color: white;
     border-radius: 3px;
     border-width: .5px;
     border-color: rgb(176, 15, 15);
+    transition: opacity 1s;
+}
+
+.subscribe-btn:hover {
+    background-color: rgb(248, 100, 100);
+    opacity: 0.6;
+}
+
+.subscribe-btn:active {
+    height: 32px;
+    width: 102px;
 }
 
 .join-btn {
@@ -21,8 +33,13 @@ button {
    border-width: 0.5px;
    color: rgb(0, 102, 255);
    width: 50px;
+   transition: 0.8s;
 }
 
+.join-btn:hover {
+    background-color: rgb(0, 102, 255);
+    color: white;
+}
 .tweet-btn {
     background-color: rgb(0, 140, 255);
     border: none;
@@ -30,6 +47,14 @@ button {
     font-weight: bold;
     color: white;
     width: 60px;
+}
+
+.join-btn:hover {
+    text-shadow: 100px;
+}
+
+.join-btn:active {
+    opacity: 0.5;
 }
 
 .uber-btn {
@@ -137,6 +162,10 @@ button {
     background-color: rgb(255, 216, 20);
     font-weight: 700;
     margin-right: 10px;
+}
+
+.add-to-cart-btn:hover {
+    background-color: rgb(216, 185, 31);
 }
 
 .buy-now-btn{
