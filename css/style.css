@@ -6,13 +6,13 @@ button {
     margin-right: 10px;
 }
 
-.subscribe-btn {
+.subscribe-btn {                
     background-color: rgb(237, 11, 11);
     color: white;
     border-radius: 3px;
     border-width: .5px;
     border-color: rgb(176, 15, 15);
-    transition: opacity 1s;
+    transition: opacity 0.25s;
 }
 
 .subscribe-btn:hover {
@@ -21,8 +21,7 @@ button {
 }
 
 .subscribe-btn:active {
-    height: 32px;
-    width: 102px;
+    border: solid;
 }
 
 .join-btn {
@@ -33,13 +32,19 @@ button {
    border-width: 0.5px;
    color: rgb(0, 102, 255);
    width: 50px;
-   transition: 0.8s;
+   transition: background-color 0.25s, 
+   color 0.25s;
 }
 
 .join-btn:hover {
     background-color: rgb(0, 102, 255);
     color: white;
 }
+
+.join-btn:active {
+    opacity: 0.5;
+}
+
 .tweet-btn {
     background-color: rgb(0, 140, 255);
     border: none;
@@ -47,21 +52,37 @@ button {
     font-weight: bold;
     color: white;
     width: 60px;
+    transition: box-shadow 0.15s;
 }
 
-.join-btn:hover {
-    text-shadow: 100px;
+.tweet-btn:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.join-btn:active {
-    opacity: 0.5;
+.tweet-btn:active {
+    box-shadow: none;
+    opacity: 0.75;
+    border: solid;
+    border-width: 2px;
 }
 
 .uber-btn {
     background-color: black;
     color: white;
-    border:none;
     margin-top: 5px;
+    font-size: 10px;
+    transition: opacity 0.25s,
+    border-radius 0.25s;
+}
+
+.uber-btn:hover {
+    background-color: rgba(0, 0, 0, 0.842);
+}
+
+.uber-btn:active {
+    border: none;
+    opacity: 0.3;
+    border-radius: 3px;
 }
 
 .amazon-btn {
@@ -72,6 +93,10 @@ button {
     width: 100px;
 }
 
+.amazon-btn:hover {
+    background-color: rgb(220, 185, 11);
+}
+
 .github-btn {
     background-color: rgb(46, 164, 79);
     border: none;
@@ -80,6 +105,10 @@ button {
     font-weight: bold;
     margin-top: 10px;
     width: 70px;
+}
+
+.github-btn:hover {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 .bootstrap-btns {
@@ -165,7 +194,7 @@ button {
 }
 
 .add-to-cart-btn:hover {
-    background-color: rgb(216, 185, 31);
+    opacity: 0.8;
 }
 
 .buy-now-btn{
