@@ -1,18 +1,38 @@
-button {
-    height: 30px;
-    width: 100px;;
-    border: none;
-    cursor: pointer;
-    margin-right: 10px;
+body {
+    display: block;
+    margin: 8px;
 }
 
-.subscribe-btn {                
-    background-color: rgb(237, 11, 11);
+button {
+    appearance: auto;
+    background-color: buttonface;
+    border-color: buttonborder;
+    border-image: initial;
+    border-style: outset;
+    border-width: 2px;
+    box-sizing: border-box;
+    color: buttontext;
+    cursor: default;
+    display: inline-block;
+    letter-spacing: normal;
+    line-height: normal;
+    margin: 0em;
+    padding-block: 1px;
+    padding-inline: 6px;
+    text-align: center;
+    text-indent: 0px;
+    text-rendering: auto;
+    text-shadow: none;
+    text-transform: none;
+    word-spacing: normal;
+}
+
+.subscribe-btn {
+    background-color: rgb(204, 0, 0);
+    border: none;
     color: white;
-    border-radius: 3px;
-    border-width: .5px;
-    border-color: rgb(176, 15, 15);
-    transition: opacity 0.25s;
+    padding: 10px 16px;
+    transition: opacity 0.15s;
 }
 
 .subscribe-btn:hover {
@@ -25,15 +45,12 @@ button {
 }
 
 .join-btn {
-   background-color: white; 
-   border: solid;
-   border-color: rgb(0, 102, 255);
-   border-radius: 3px;
-   border-width: 0.5px;
-   color: rgb(0, 102, 255);
-   width: 50px;
-   transition: background-color 0.25s, 
-   color 0.25s;
+    background-color: white;
+    border: 1px solid rgb(6, 95, 212);
+    color: rgb(6, 95, 212);
+    cursor: pointer;
+    padding: 9px 15px;
+    transition: background-color 0.15s, color 0.15s;
 }
 
 .join-btn:hover {
@@ -45,33 +62,43 @@ button {
     opacity: 0.5;
 }
 
+.subscribe-btn, .join-btn {
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: normal;
+    margin-right: 12px;
+}
+
 .tweet-btn {
-    background-color: rgb(0, 140, 255);
+    background-color: rgb(29, 155, 240);
     border: none;
-    border-radius: 20px;
-    font-weight: bold;
+    border-radius: 50px;
     color: white;
-    width: 60px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 22.5px;
+    padding: 7px 16px;
     transition: box-shadow 0.15s;
 }
 
 .tweet-btn:hover {
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .tweet-btn:active {
-    box-shadow: none;
-    opacity: 0.75;
-    border: solid;
-    border-width: 2px;
+    opacity: 0.7;
 }
 
 .uber-btn {
     background-color: black;
+    border: none;
     color: white;
-    margin-top: 5px;
     font-size: 10px;
-    transition: opacity 0.25s,
+    margin-top: 5px;
+
+transition: opacity 0.25s,
     border-radius 0.25s;
 }
 
@@ -81,8 +108,8 @@ button {
 
 .uber-btn:active {
     border: none;
-    opacity: 0.3;
     border-radius: 3px;
+    opacity: 0.3;
 }
 
 .amazon-btn {
@@ -123,9 +150,9 @@ button {
 
 .getStart-btn:hover {
     background-color: white;
-    color: rgb(121, 82, 179);
     border: solid;
     border-color: rgb(121, 82, 179);
+    color: rgb(121, 82, 179);
 }
 
 .download-btn {
@@ -133,7 +160,6 @@ button {
     border: solid;
     border-radius: 3px;
     color: rgb(108, 117, 125);
-
 }
 
 .download-btn:hover {
@@ -150,9 +176,8 @@ button {
     border: solid;
     border-radius: 3px;
     color: white;
-    width: fit-content;
     padding: 5px 15px;
-
+    width: fit-content;
 }
 
 .applyWebsite-btn:hover {
@@ -165,9 +190,8 @@ button {
     border: solid;
     border-radius: 3px;
     color: rgb(10, 102, 194);
-    width: fit-content;
     padding: 5px 15px;
-
+    width: fit-content;
 }
 
 .linkedIn-save-btn:hover {
@@ -176,8 +200,8 @@ button {
 }
 
 .bta-text{
-    text-decoration: underline;
     color: rgb(0, 113, 133);
+    text-decoration: underline;
 }
 
 .prc-stk {
@@ -186,9 +210,9 @@ button {
 }
 
 .add-to-cart-btn {
-    color: black;
-    border-radius: 20px;
     background-color: rgb(255, 216, 20);
+    border-radius: 20px;
+    color: black;
     font-weight: 700;
     margin-right: 10px;
 }
@@ -200,5 +224,5 @@ button {
 .buy-now-btn{
     background-color: rgb(255, 164, 28);
     border-radius: 20px;
-    font-weight: 700;    
+    font-weight: 700;
 }
